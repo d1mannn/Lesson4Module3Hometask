@@ -8,8 +8,7 @@ using namespace std;
 
 int main()
 {
-	
-	MyStart:
+
 	setlocale(LC_ALL, "Rus");
 	cout << "Введите номер задания - ";
 	int task;
@@ -164,8 +163,19 @@ int main()
 			{
 				i++;
 
-			} while (7 * i < k);
-			cout << k << "-й день это " <<i << "-я неделя."<< endl;
+			} while ((7 * i) < k);
+
+			//Для чег делать каждый раз вычесления!? 
+			//Вычисли одни рази используй Switch
+		/*	cout << k << "-й день это " <<i << "-я неделя."<< endl;
+			int day = (7 * i) - k;
+			switch (day)
+			{
+			case 0:
+				cout << "Воскресенье" << endl;
+				break;
+			}*/
+
 			if ((7 * i) - k == 0)
 				cout << "Воскресенье" << endl;
 			else if ((7 * i) - k == 1)
